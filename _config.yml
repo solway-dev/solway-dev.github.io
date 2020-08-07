@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 创维互联开发指南
 subtitle: ''
 description: ''
 keywords:
-author: John Doe
-language: en
+author: 刘小军
+language: zh-CN
 timezone: ''
 
 # URL
@@ -44,18 +44,45 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
+# highlight:
+#   enable: true
+#   line_number: true
+#   auto_detect: false
+#   tab_replace: ''
+#   wrap: true
+#   hljs: false
 highlight:
-  enable: true
-  line_number: true
+  enable: false
+  line_number: false
   auto_detect: false
   tab_replace: ''
-  wrap: true
-  hljs: false
 prismjs:
   enable: false
   preprocess: true
   line_number: true
   tab_replace: ''
+
+# Markdown-it config
+markdown:
+  render:
+    html: true
+    xhtmlOut: false
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: '“”‘’'
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-sub
+    - markdown-it-sup
+  anchors:
+    level: 2
+    collisionSuffix: 'v'
+    permalink: true
+    permalinkClass: header-anchor
+    permalinkSymbol: ¶
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -98,9 +125,13 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: tree
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
+# git@github.com:solway-dev/solway-dev.github.io.git
 deploy:
-  type: ''
+  type: git
+  repo: ssh://git@github.com/solway-dev/solway-dev.github.io.git
+  branch: master
+  message: 文档更新
