@@ -44,18 +44,18 @@ render_drafts: false
 post_asset_folder: false
 relative_link: false
 future: true
-# highlight:
-#   enable: true
-#   line_number: true
-#   auto_detect: false
-#   tab_replace: ''
-#   wrap: true
-#   hljs: false
 highlight:
-  enable: false
-  line_number: false
+  enable: true
+  line_number: true
   auto_detect: false
   tab_replace: ''
+  wrap: true
+  hljs: false
+# highlight:
+#   enable: false
+#   line_number: false
+#   auto_detect: false
+#   tab_replace: ''
 prismjs:
   enable: false
   preprocess: true
@@ -63,26 +63,51 @@ prismjs:
   tab_replace: ''
 
 # Markdown-it config
-markdown:
-  render:
-    html: true
-    xhtmlOut: false
-    breaks: true
-    linkify: true
-    typographer: true
-    quotes: '“”‘’'
-  plugins:
-    - markdown-it-abbr
-    - markdown-it-footnote
-    - markdown-it-ins
-    - markdown-it-sub
-    - markdown-it-sup
-  anchors:
-    level: 2
-    collisionSuffix: 'v'
-    permalink: true
-    permalinkClass: header-anchor
-    permalinkSymbol: ¶
+# markdown:
+#   render:
+#     html: true
+#     xhtmlOut: false
+#     breaks: true
+#     linkify: true
+#     typographer: true
+#     quotes: '“”‘’'
+#   plugins:
+#     - markdown-it-abbr
+#     - markdown-it-footnote
+#     - markdown-it-ins
+#     - markdown-it-sub
+#     - markdown-it-sup
+#   anchors:
+#     level: 2
+#     collisionSuffix: 'v'
+#     permalink: true
+#     permalinkClass: header-anchor
+#     permalinkSymbol: ¶
+
+# markdown:
+#   render:
+#     html: true
+#     xhtmlOut: false
+#     breaks: true
+#     linkify: true
+#     typographer: true
+#     quotes: “”‘’
+  # plugins:
+  #   markdown-it-anchor:
+  #     level: 1
+  #     slugify: function (s) {return encodeURIComponent(s);} # String starting with 'function' will be parsed as a function that satisfies the plugin
+  #     permalink: true
+  #     permalinkClass: header-anchor
+  #     permalinkSymbol: ¶
+  #     permalinkBefore: true
+  #   markdown-it-checkbox:
+  #     divWrap: false
+  #     divClass: checkbox
+  #     idPrefix: checkbox
+  #   markdown-it-katex:
+  #     throwOnError: false
+  #     errorColor: "#cc0000"
+  #     csslink: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.6.0/katex.min.css # KaTeX plugin needs the CSS file link
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
