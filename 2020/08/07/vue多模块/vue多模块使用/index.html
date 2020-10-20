@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- title -->
+	
+	<title>
+	
+		vue多模块使用 | 
+	 
+	创维互联开发指南
+	</title>
+	
+	<!-- keywords,description -->
+	 
+
+	<!-- favicon -->
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+  
+
+	
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+
+
+	
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+	
+<script src="/js/main.js"></script>
+
+	
+		
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+
+		
+<script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script>
+
+	
+	
+		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+<meta name="generator" content="Hexo 5.0.2"></head>
+
+<body>
+	<header id="header">
+    <a id="title" href="/" class="logo">创维互联开发指南</a>
+
+	<ul id="menu">
+		<li class="menu-item">
+			<a href="/about" class="menu-item-link">ABOUT</a>
+		</li>
+		
+		<li class="menu-item">
+			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+				UidGenerator
+			</a>
+		</li>
+		<li class="menu-item">
+			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+				<i class="fa fa-github fa-2x"></i>
+			</a>
+		</li>
+	</ul>
+</header>
+
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/08/05/00.%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">
+										00.使用指南
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										vue
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/08/07/vue/vue%E4%B8%BB%E9%A2%98%E5%88%87%E6%8D%A2/">
+										vue主题切换
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/10/10/vue/%E8%B7%AF%E7%94%B1%E8%8F%9C%E5%8D%95%E7%B3%BB%E7%BB%9F/">
+										路由菜单系统
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										vue多模块
+									</a>
+									
+							<ul>
+								<li class="file active">
+									<a href="/2020/08/07/vue%E5%A4%9A%E6%A8%A1%E5%9D%97/vue%E5%A4%9A%E6%A8%A1%E5%9D%97%E4%BD%BF%E7%94%A8/">
+										vue多模块使用
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										移动端
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/08/07/%E7%A7%BB%E5%8A%A8%E7%AB%AF/%E8%B7%A8%E7%BB%88%E7%AB%AF%E6%AF%94%E8%BE%83/">
+										跨终端比较
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content">
+		<h1 id="article-title">
+
+	vue多模块使用
+</h1>
+<div class="article-meta">
+	
+	<span>刘小军</span>
+	<span>2020-08-07 12:03:59</span>
+    
+		<div id="article-categories">
+            
+		</div>
+    
+</div>
+
+<div id="article-content">
+	<h3 id="基于-vue-cli-2-实现，vue-多模块、vue多项目集成工程"><a href="#基于-vue-cli-2-实现，vue-多模块、vue多项目集成工程" class="headerlink" title="基于 vue-cli 2 实现，vue 多模块、vue多项目集成工程"></a>基于 vue-cli 2 实现，vue 多模块、vue多项目集成工程</h3><p>目标：多模块集成的vue项目，多项目共用一份配置，可以互相依赖，也可以独立打包部署</p>
+<h3 id="使用业务场景"><a href="#使用业务场景" class="headerlink" title="使用业务场景"></a>使用业务场景</h3><p>1.如果项目可能有对应多个不同UI界面;对于这样的场景你可能首先会想到，用样式主题就可以实现，基本的样式或者换肤是可以通过样式实现。但如果要实现更复杂的，比如不同两套UI的界面可能功能显示及样式都有差别，那就不得不单独拆成一个项目，但是这样又会造成每个项目很多冗余代码。</p>
+<p>2.如果项目有多个子模块(同时子模块之间又存在互相依赖关系)；对于这样的场景是可以把项目独立发布到npm仓库，但是这样又涉及到每个模块都需要独立编译好再发布，实际过程有显得有些繁琐（实际视情况而定）。</p>
+<p>对于以上场景可以使用一个项目管理多个子模块也是一个不错的选择。</p>
+<h3 id="多页面和多模块区别"><a href="#多页面和多模块区别" class="headerlink" title="多页面和多模块区别"></a>多页面和多模块区别</h3><p><strong>多页面</strong>：多页面是指一个项目有多个入口，打包是会生成多个html文件，实际开发过程中都是混合在一个项目中开发；</p>
+<p><strong>多模块</strong>：是指不同的业务模块可以进行拆分；各自独立运行、也可以互相引用，这一点和通过 npm 发布是类似的；对于一些项目本身不允许发布的情况下，既可以独立开发，又不需要发布到共有仓库（当然也可以通过建立私有仓库解决哈）</p>
+<h3 id="问题"><a href="#问题" class="headerlink" title="问题:"></a>问题:</h3><p>1,如何划分子模块；<br>2,如何分离可复用组件；<br>3,如何独立编译，每个子模块独立打包编译、运行；</p>
+<h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><p>1,高复用性<br>2,统一管理依赖库<br>3,不同模块使用的依赖各自按需打包<br>4,模块之间相互独立运行、编译、打包<br>5,模块之间可以直接互相引用，不需要iframe（一般方式是通过iframe嵌入，这样的性能相当差）</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># （单个模块）新建模块  普通vue项目模块</span></span><br><span class="line">npm run newProject -- --name 模块名 [--proxyTarget 默认代理地址 --参数名 参数值 --参数名 参数值]</span><br><span class="line"></span><br><span class="line"><span class="comment"># （单个模块）新建微服务模块</span></span><br><span class="line">npm run newMicroProject -- --name 模块名 [--proxyTarget 默认代理地址 --参数名 参数值 --参数名 参数值]</span><br><span class="line"></span><br><span class="line"><span class="comment"># （单个模块）编译模块主题 element-ui主题</span></span><br><span class="line">npm run et:模块名</span><br><span class="line"></span><br><span class="line"><span class="comment"># （单个模块）启动本地服务</span></span><br><span class="line">npm run dev:模块名</span><br><span class="line"></span><br><span class="line"><span class="comment"># （单个模块）启动本地服务 指定代理地址</span></span><br><span class="line">npm run dev:模块名 -- --env.proxyTarget=目标代理地址</span><br><span class="line"></span><br><span class="line"><span class="comment"># （所有模块）编译所有生产包</span></span><br><span class="line">npm run build</span><br><span class="line"></span><br><span class="line"><span class="comment"># （单个模块）编译模块生产包</span></span><br><span class="line">npm run build:模块名</span><br><span class="line"></span><br><span class="line"><span class="comment"># （所有模块）编译并生成 zip 生产包</span></span><br><span class="line">npm run build:zip</span><br><span class="line"></span><br><span class="line"><span class="comment"># （单个模块）编译并生成 zip 生产包</span></span><br><span class="line">npm run build:模块名:zip</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>参考：Github项目地址 : <a target="_blank" rel="noopener" href="https://github.com/BothEyes1993/vue-multi-module">https://github.com/BothEyes1993/vue-multi-module</a></p>
+<!-- 博客：https://blog.csdn.net/u010633266/article/details/90004694 -->
+
+</div>
+
+
+    <div class="post-guide">
+        <div class="item left">
+            
+              <a href="/2020/08/07/%E7%A7%BB%E5%8A%A8%E7%AB%AF/%E8%B7%A8%E7%BB%88%E7%AB%AF%E6%AF%94%E8%BE%83/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  跨终端比较
+              </a>
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2020/08/07/vue/vue%E4%B8%BB%E9%A2%98%E5%88%87%E6%8D%A2/">
+                vue主题切换
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+
+	<div id="vcomments"></div>
+
+
+<script>
+	
+		// 评论
+		new Valine({
+			av: AV,
+			el: '#vcomments',
+			notify: false,
+			verify: false,
+			path: window.location.pathname,
+			appId: '',
+			appKey: '',
+			placeholder: '请输入评论',
+			avatar: 'retro',
+			recordIP: false
+		})
+	
+	
+</script>
+	</div>
+	<div id="footer">
+	<p>
+	©2019-<span id="footerYear"></span> 
+	<a href="/">刘小军</a> 
+	
+	
+		|
+		<span id="busuanzi_container_site_pv">
+			pv
+			<span id="busuanzi_value_site_pv"></span>
+		</span>
+		|
+		<span id="busuanzi_container_site_uv"> 
+			uv
+			<span id="busuanzi_value_site_uv"></span>
+		</span>
+	
+	<br>
+	Theme <a href="//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="//github.com/wujun234" target="_blank">WuJun</a>
+	Powered by <a href="//hexo.io" target="_blank">Hexo</a>
+	</p>
+</div>
+<script type="text/javascript"> 
+	document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
+</script>
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+</body>
+</html>

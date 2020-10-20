@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	
+	<!-- title -->
+	
+	<title>
+	
+		vue项目主题切换 | 
+	 
+	创维互联开发指南
+	</title>
+	
+	<!-- keywords,description -->
+	 
+
+	<!-- favicon -->
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+	
+  
+
+	
+<link rel="stylesheet" href="/css/main.css">
+
+	
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/darcula.min.css">
+
+
+	
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+	
+<script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+
+	
+<script src="/js/main.js"></script>
+
+	
+		
+<script src="https://cdn.jsdelivr.net/npm/leancloud-storage/dist/av-min.js"></script>
+
+		
+<script src="https://cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script>
+
+	
+	
+		<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	
+<meta name="generator" content="Hexo 5.0.2"></head>
+
+<body>
+	<header id="header">
+    <a id="title" href="/" class="logo">创维互联开发指南</a>
+
+	<ul id="menu">
+		<li class="menu-item">
+			<a href="/about" class="menu-item-link">ABOUT</a>
+		</li>
+		
+		<li class="menu-item">
+			<a href="https://github.com/wujun234/uid-generator-spring-boot-starter" class="menu-item-link" target="_blank">
+				UidGenerator
+			</a>
+		</li>
+		<li class="menu-item">
+			<a href="https://github.com/wujun234" class="menu-item-link" target="_blank">
+				<i class="fa fa-github fa-2x"></i>
+			</a>
+		</li>
+	</ul>
+</header>
+
+	
+<div id="sidebar">
+	<button id="sidebar-toggle" class="toggle" ><i class="fa fa-arrow-right " aria-hidden="true"></i></button>
+	
+	<div id="site-toc">
+		<input id="search-input" class="search-input" type="text" placeholder="search...">
+		<div id="tree">
+			
+
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/08/05/00.%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">
+										00.使用指南
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										vue
+									</a>
+									
+							<ul>
+								<li class="file active">
+									<a href="/2020/08/07/vue/vue%E4%B8%BB%E9%A2%98%E5%88%87%E6%8D%A2/">
+										vue主题切换
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+							<ul>
+								<li class="file">
+									<a href="/2020/10/10/vue/%E8%B7%AF%E7%94%B1%E8%8F%9C%E5%8D%95%E7%B3%BB%E7%BB%9F/">
+										路由菜单系统
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										vue多模块
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/08/07/vue%E5%A4%9A%E6%A8%A1%E5%9D%97/vue%E5%A4%9A%E6%A8%A1%E5%9D%97%E4%BD%BF%E7%94%A8/">
+										vue多模块使用
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+							<ul>
+								<li class="directory">
+									<a href="#" class="directory">
+										<i class="fa fa-plus-square-o"></i>
+										移动端
+									</a>
+									
+							<ul>
+								<li class="file">
+									<a href="/2020/08/07/%E7%A7%BB%E5%8A%A8%E7%AB%AF/%E8%B7%A8%E7%BB%88%E7%AB%AF%E6%AF%94%E8%BE%83/">
+										跨终端比较
+									</a>
+								</li>
+								<div class="article-toc" style="display: none;"></div>
+							</ul>
+			
+								</li>
+								
+							</ul>
+			
+		</div>
+	</div>
+</div>
+
+	<!-- 引入正文 -->
+	<div id="content">
+		<h1 id="article-title">
+
+	vue主题切换
+</h1>
+<div class="article-meta">
+	
+	<span>刘小军</span>
+	<span>2020-08-07 11:49:28</span>
+    
+		<div id="article-categories">
+            
+		</div>
+    
+</div>
+
+<div id="article-content">
+	<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><h4 id="在路由中配置当前页面支持的主题"><a href="#在路由中配置当前页面支持的主题" class="headerlink" title="在路由中配置当前页面支持的主题"></a>在路由中配置当前页面支持的主题</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">[&#123;</span><br><span class="line">    path: <span class="string">&#x27;/dataReport&#x27;</span>,</span><br><span class="line">    name: <span class="string">&#x27;dataReport&#x27;</span>,</span><br><span class="line">    component: <span class="function">() =&gt;</span> <span class="keyword">import</span>(<span class="string">&#x27;@/pages/dataReport&#x27;</span>),</span><br><span class="line">    meta: &#123;</span><br><span class="line">        title: <span class="string">&#x27;数据报表&#x27;</span>,</span><br><span class="line">        icon: <span class="string">&#x27;iconfont icon-baogao&#x27;</span>,</span><br><span class="line">        <span class="comment">// 在路由中配置当前页面支持的主题</span></span><br><span class="line">        pageTheme: [<span class="string">&#x27;light&#x27;</span>, <span class="string">&#x27;dark&#x27;</span>]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;]</span><br></pre></td></tr></table></figure>
+<h4 id="scss-中使用写"><a href="#scss-中使用写" class="headerlink" title="scss 中使用写"></a>scss 中使用写</h4><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 定义主题列表，覆盖全局定义的主题列表，也就是当前页面支持的主题列表，</span></span><br><span class="line"><span class="comment">// 一般多定义几个，不用的主题随便写个颜色，以后好改好加</span></span><br><span class="line"><span class="variable">$pageTheme</span>: darkBlue light dark;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 定义当前页面内使用的scss变量, 颜色与主题色一一对应</span></span><br><span class="line"><span class="variable">$fontColor</span>: <span class="number">#fff</span> <span class="number">#333</span> rgba(<span class="number">47</span>, <span class="number">191</span>, <span class="number">204</span>, <span class="number">1</span>);</span><br><span class="line"><span class="variable">$bgColor</span>: <span class="number">#fff</span> <span class="number">#fff</span> <span class="number">#18305B</span>;</span><br><span class="line"><span class="variable">$bdColor</span>: <span class="number">#fff</span> <span class="number">#fff</span> <span class="number">#18305B</span>;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">    <span class="keyword">@include</span> page_c(color, <span class="variable">$fontColor</span>);</span><br><span class="line">    <span class="keyword">@include</span> page_c(background-color, <span class="variable">$bgColor</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 复合属性，需要单独设置颜色。把设置颜色的属性拆出来，覆盖</span></span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> solid;</span><br><span class="line">    <span class="keyword">@include</span> page_c(border-color, <span class="variable">$bdColor</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 背景图，两个参数为前缀和后缀。  中间会自动拼接主题名</span></span><br><span class="line">    <span class="keyword">@include</span> bgi(<span class="string">&#x27;~./img/&#x27;</span>, <span class="string">&#x27;/a.jpg&#x27;</span>);</span><br><span class="line">    <span class="comment">// 生成结果如下，所以需要在对应目录放图片</span></span><br><span class="line">    <span class="comment">// background-image: url(&#x27;~./img/darkBlue/a.jpg&#x27;);</span></span><br><span class="line">    <span class="comment">// background-image: url(&#x27;~./img/light/a.jpg&#x27;);</span></span><br><span class="line">    <span class="comment">// background-image: url(&#x27;~./img/dark/a.jpg&#x27;);</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="写一个vue-mixin组件"><a href="#写一个vue-mixin组件" class="headerlink" title="写一个vue mixin组件"></a>写一个vue mixin组件</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">    data () &#123;</span><br><span class="line">        <span class="built_in">this</span>._darkBlue = &#123;</span><br><span class="line">            $axisTextColor: <span class="string">&#x27;rgba(26,127,161,1)&#x27;</span>,</span><br><span class="line">            $chartTextColor: <span class="string">&#x27;rgba(45,183,195,1)&#x27;</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">this</span>._light = &#123;</span><br><span class="line">            $axisTextColor: <span class="string">&#x27;rgba(110, 110,110,0.5)&#x27;</span>,</span><br><span class="line">            $chartTextColor: <span class="string">&#x27;rgba(110, 110,110,0.5)&#x27;</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">this</span>._dark = &#123;</span><br><span class="line">            $axisTextColor: <span class="string">&#x27;rgba(26,127,161,1)&#x27;</span>,</span><br><span class="line">            $chartTextColor: <span class="string">&#x27;#BDC0C5&#x27;</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> &#123;&#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    computed: &#123;</span><br><span class="line">        theme () &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">this</span>[<span class="string">&#x27;_&#x27;</span> + <span class="built_in">this</span>.themeName] || &#123;&#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        themeName () &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">this</span>.$route.meta?.pageTheme?.some(<span class="function"><span class="params">v</span> =&gt;</span> v === <span class="built_in">this</span>.$store.getters.global_theme)) <span class="keyword">return</span> <span class="built_in">this</span>.$store.getters.global_theme</span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">this</span>.$route.meta?.pageTheme?.[<span class="number">0</span>] || <span class="built_in">this</span>.$store.getters.global_theme</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h4 id="js-中使用"><a href="#js-中使用" class="headerlink" title="js 中使用"></a>js 中使用</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> theme <span class="keyword">from</span> <span class="string">&#x27;./theme&#x27;</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">    mixins: [theme],</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">    created () &#123;</span><br><span class="line">        <span class="built_in">this</span>.extend.textStyle = &#123;<span class="attr">color</span>: <span class="built_in">this</span>.theme.$chartTextColor&#125;</span><br><span class="line">        <span class="built_in">this</span>.extend.legend.textStyle = &#123;<span class="attr">color</span>: <span class="built_in">this</span>.theme.$chartTextColor&#125;</span><br><span class="line">        <span class="built_in">this</span>.$nextTick(<span class="function">() =&gt;</span> <span class="built_in">this</span>.setChart())</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="实现原理"><a href="#实现原理" class="headerlink" title="实现原理"></a>实现原理</h3><h4 id="定义scss函数"><a href="#定义scss函数" class="headerlink" title="定义scss函数"></a>定义scss函数</h4><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@charset</span> <span class="string">&quot;utf-8&quot;</span>;</span><br><span class="line"><span class="variable">$pageTheme</span>: darkBlue;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 这个是页面内使用，可以传入主题</span></span><br><span class="line"><span class="keyword">@mixin</span> page_c(<span class="variable">$attr</span>, <span class="variable">$color-list</span>) &#123;</span><br><span class="line">    <span class="keyword">@for</span> <span class="variable">$i</span> from <span class="number">1</span> to length(<span class="variable">$pageTheme</span>)+<span class="number">1</span> &#123;</span><br><span class="line">        <span class="selector-attr">[data-pagetheme=&quot;#&#123;nth($pageTheme, $i)&#125;&quot;]</span> &amp; &#123;</span><br><span class="line">            #&#123;<span class="variable">$attr</span>&#125;: nth(<span class="variable">$color-list</span>, <span class="variable">$i</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">// 背景图</span></span><br><span class="line"><span class="keyword">@mixin</span> page_bgi(<span class="variable">$frist</span>, <span class="variable">$last</span>) &#123;</span><br><span class="line">    <span class="keyword">@for</span> <span class="variable">$i</span> from <span class="number">1</span> to length(<span class="variable">$pageTheme</span>)+<span class="number">1</span> &#123;</span><br><span class="line">        <span class="selector-attr">[data-pagetheme=&quot;#&#123;nth($pageTheme, $i)&#125;&quot;]</span> &amp; &#123;</span><br><span class="line">            <span class="attribute">background-image</span>: url(<span class="string">&quot;#&#123;$frist&#125;#&#123;nth($pageTheme, $i)&#125;#&#123;$last&#125;&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="webpack-配置如下，全局注入scss"><a href="#webpack-配置如下，全局注入scss" class="headerlink" title="webpack 配置如下，全局注入scss"></a>webpack 配置如下，全局注入scss</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">    &#123;</span><br><span class="line">        test: <span class="regexp">/\.vue$/</span>,</span><br><span class="line">        loader: <span class="string">&#x27;vue-loader&#x27;</span>,</span><br><span class="line">        options: &#123;</span><br><span class="line">            loaders: &#123;</span><br><span class="line">                &#123;</span><br><span class="line">                    ...</span><br><span class="line">                    scss: generateLoaders(<span class="string">&#x27;sass&#x27;</span>).concat(</span><br><span class="line">                        &#123;</span><br><span class="line">                            loader: <span class="string">&#x27;sass-resources-loader&#x27;</span>,</span><br><span class="line">                            options: &#123;</span><br><span class="line">                                <span class="comment">// 需要全局引入的sass文件，这里引入了的scss文件，在所有的.vue文件都可以用到这份css样式，</span></span><br><span class="line">                                <span class="comment">// 下面的resources接受一个数组，可以添加多个scss文件</span></span><br><span class="line">                                resources: [</span><br><span class="line">                                    path.resolve(__dirname, <span class="string">`../src/<span class="subst">$&#123;multiConfig.process.name&#125;</span>/assets/themes/index.scss`</span>)</span><br><span class="line">                                ]</span><br><span class="line">                            &#125;</span><br><span class="line">                        &#125;</span><br><span class="line">                    ),</span><br><span class="line">                    ...</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;,</span><br><span class="line">            ...</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<h4 id="根组件修改"><a href="#根组件修改" class="headerlink" title="根组件修改"></a>根组件修改</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">    name: <span class="string">&#x27;App&#x27;</span>,</span><br><span class="line">    created () &#123;</span><br><span class="line">        <span class="comment">// 初始化选中主题</span></span><br><span class="line">        <span class="built_in">document</span>.documentElement.dataset.pagetheme = <span class="built_in">this</span>.pagetheme</span><br><span class="line">    &#125;,</span><br><span class="line">    computed: &#123;</span><br><span class="line">        <span class="comment">// 计算当前应该应用哪个主题，即使全局主题已切换，若当前页面不支持全局主题，就用默认第一个支持的主题。</span></span><br><span class="line">        pagetheme () &#123;</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">this</span>.$route.meta?.pageTheme?.some(<span class="function"><span class="params">v</span> =&gt;</span> v === <span class="built_in">this</span>.$store.getters.global_theme)) <span class="keyword">return</span> <span class="built_in">this</span>.$store.getters.global_theme</span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">this</span>.$route.meta?.pageTheme?.[<span class="number">0</span>] || <span class="built_in">this</span>.$store.getters.global_theme</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    watch: &#123;</span><br><span class="line">        pagetheme (val) &#123;</span><br><span class="line">            <span class="comment">// 监听主题切换，根元素设置自定义属性为 当前主题名</span></span><br><span class="line">            <span class="built_in">document</span>.documentElement.dataset.pagetheme = val</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>全局主题可以记录到store</p>
+<hr>
+<p>完</p>
+
+</div>
+
+
+    <div class="post-guide">
+        <div class="item left">
+            
+              <a href="/2020/08/07/vue%E5%A4%9A%E6%A8%A1%E5%9D%97/vue%E5%A4%9A%E6%A8%A1%E5%9D%97%E4%BD%BF%E7%94%A8/">
+                  <i class="fa fa-angle-left" aria-hidden="true"></i>
+                  vue多模块使用
+              </a>
+            
+        </div>
+        <div class="item right">
+            
+              <a href="/2020/08/05/00.%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/">
+                
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </a>
+            
+        </div>
+    </div>
+
+
+
+	<div id="vcomments"></div>
+
+
+<script>
+	
+		// 评论
+		new Valine({
+			av: AV,
+			el: '#vcomments',
+			notify: false,
+			verify: false,
+			path: window.location.pathname,
+			appId: '',
+			appKey: '',
+			placeholder: '请输入评论',
+			avatar: 'retro',
+			recordIP: false
+		})
+	
+	
+</script>
+	</div>
+	<div id="footer">
+	<p>
+	©2019-<span id="footerYear"></span> 
+	<a href="/">刘小军</a> 
+	
+	
+		|
+		<span id="busuanzi_container_site_pv">
+			pv
+			<span id="busuanzi_value_site_pv"></span>
+		</span>
+		|
+		<span id="busuanzi_container_site_uv"> 
+			uv
+			<span id="busuanzi_value_site_uv"></span>
+		</span>
+	
+	<br>
+	Theme <a href="//github.com/wujun234/hexo-theme-tree" target="_blank">Tree</a>
+	by <a href="//github.com/wujun234" target="_blank">WuJun</a>
+	Powered by <a href="//hexo.io" target="_blank">Hexo</a>
+	</p>
+</div>
+<script type="text/javascript"> 
+	document.getElementById('footerYear').innerHTML = new Date().getFullYear() + '';
+</script>
+	<button id="totop-toggle" class="toggle"><i class="fa fa-angle-double-up" aria-hidden="true"></i></button>
+</body>
+</html>
