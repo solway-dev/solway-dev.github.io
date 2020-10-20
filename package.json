@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "custom": "C:/dev/nvm/v12.18.2/node.exe C:/dev/nvm/v12.18.2/node_modules/npm/bin/npm-cli.js run start --scripts-prepend-node-path=auto",
+    "custom": "D:/workspace/solway-dev.github.io/node-v12.19.0-win-x64/node.exe D:/workspace/solway-dev.github.io/node-v12.19.0-win-x64/node_modules/npm/bin/npm-cli.js run start --scripts-prepend-node-path=auto",
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
